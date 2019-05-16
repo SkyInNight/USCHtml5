@@ -1,0 +1,169 @@
+/* 第三单元 3-3 摇晃的桃子 */
+p{
+    font-family: '微软雅黑';
+    font-size: 40px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+.act_wrapper{
+    position: relative;
+    z-index: 1;
+    /* 元素最小宽度1000px */
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.act_wrapper .act_bg{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    width: 1920px;
+    margin-left: -1350px;
+}
+.act_wrapper .act_content{
+    position: relative;
+    z-index: 2;
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    margin-top: -569px;
+}
+.act_bg{
+    background: url(../imgs/bg.jpg) 100% 0 no-repeat;
+    height: 750px;
+}
+.mod_style{
+    position: absolute;
+    top: 716px;
+    left: 200px;
+    width: 870px;
+    height: 560px;
+}
+.peach{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100px;
+    display: block;
+    /* 设置背景图片为精灵图片？？？ */
+    background: url(../imgs/peach.png) no-repeat 0 0;
+}
+.peach1{
+    background-position: 0 0;
+    top: 100px;
+    left: 72px;
+}
+.peach2{
+    background-position: 0 -115px;
+    top: 39px;
+    left: 242px;
+}
+.peach3{
+    background-position: 0 -215px;
+    top: 71px;
+    left: 452px;
+}
+.peach4{
+    background-position: 0 -328px;
+    top: 156px;
+    left: 261px;
+}
+.peach5{
+    background-position: 0 -435px;
+    top: 256px;
+    left: 412px;
+}
+.peach6{
+    background-position: 0 -545px;
+    top: 247px;
+    left: 575px;
+}
+.shake1{
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+}
+.shake2{
+    animation-duration: 3.5s;
+    -webkit-animation-duration: 3.5s;
+}
+.shake3{
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+}
+.shake4{
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+.shake5{
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+.shake1,.shake2,.shake3,.shake4,.shake5,.shake6{
+    /* 动画被播放的次数：无限次 */
+    animation-iteration-count: initial;
+    /* 动画名称：摇晃 */
+    animation-name: shake;
+    /* 动画的速度曲线：以低俗开始和结束 */
+    animation-timing-function: ease-in-out;
+    /* 动画被播放的次数：无限次 */
+    -webkit-animation-iteration-count: initial;
+    /* 动画名称：摇晃 */
+    -webkit-animation-name: shake;
+    /* 动画的速度曲线：以低俗开始和结束 */
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(2deg);
+        transform-origin: 50% 0;
+    }
+    20%{
+        transform: rotate(10deg);
+        transform-origin: 50% 0;
+    }
+    40%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+    60%{
+        transform: rotate(-2deg);
+        transform-origin: 50% 0;
+    }
+    80%{
+        transform: rotate(-10deg);
+        transform-origin: 50% 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+}
+@-webkit-keyframes shake{
+    0%{
+        -webkit-transform: rotate(2deg);
+        -webkit-transform-origin: 50% 0;
+    }
+    20%{
+        -webkit-transform: rotate(10deg);
+        -webkit-transform-origin: 50% 0;
+    }
+    40%{
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 0;
+    }
+    60%{
+        -webkit-transform: rotate(-2deg);
+        -webkit-transform-origin: 50% 0;
+    }
+    80%{
+        -webkit-transform: rotate(-10deg);
+        -webkit-transform-origin: 50% 0;
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+}
