@@ -1,0 +1,162 @@
+.qui-page{
+    width: 640px;
+}
+.qui-header{
+    width: 100%;
+    height: 80px;
+    /* 隐藏移除内容 */
+    overflow:hidden;
+    /* 背景色设置为墨绿色 */
+    background-color: #2bab79;
+}
+.container{
+    width: 100%;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.plcRouteList{
+    /* 底部边框为1px 颜色为灰色的实线 */
+    border-bottom: 1px solid #e6e8ea;
+    background-color: #fff;
+    /* 左边内边距为5px */
+    padding-left:5px;
+}
+.plcRouteList li{
+    /* 上、右、下、左内边距分别为15px、5px、15px、0 */
+    padding:15px 5px 15px 0;
+    /* 顶部边框为1px 颜色为灰色的实线 */
+    border-top:1px solid #e5e8ea;
+}
+.plcRouteList a{
+    /* 把a由行元素变为块元素 */
+    display:block;
+    position: relative;
+}
+.plcRouteList .pic{
+    display:block;
+    min-height:150px;
+}
+.plcRouteList .bottom{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height:50px;
+    padding:30px 0 0 60px;
+    color:#fff;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0,0.6));
+    background-image: linear-gradient(top,rgba(0, 0, 0, 0),rgba(0,0,0,0,0.6));
+}
+.plcRouteList .bottom .face{
+    float:left;
+    margin-left: -50px;
+    width: 38px;
+    height:38px;
+    border:1px solid #fff;
+    border-radius:50%;
+    overflow:hidden;
+}
+.plcRouteList .bottom .face img{
+    display: block;
+    border-radius:50%;
+}
+.plcRouteList .bottom    .title{
+    width:100%;
+    overflow: hidden;
+    /* 表示当前对象内文本益处时显示省略标记（。。。） */
+    text-overflow: ellipsis;
+    /* 规定范围内文本不换行 */
+    white-space: nowrap;
+}
+.plcRouteList .day{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    /* 背景颜色：rgb对应的是颜色值，a对应的是透明度 */
+    background-color: rgba(43,171,121,0.8);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+}
+.plcRouteList .infos{
+    margin-top: 7px;
+}
+.plcRouteList .infos>div{
+    /* 底部外边距为5px */
+    margin-bottom: 5px;
+    /* 左边内边距40px */
+    padding-left: 40px;
+}
+.plcRouteList .infos em{
+    float: left;
+    margin-left: -40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.plcRouteList .infos p{
+    max-height: 48px;
+    overflow: hidden;
+}
+.qui-fotterBasic{
+    width: 100%;
+    /* 上下外边距为20px，左右外边距为0 */
+    margin: 20px 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+}
+.qui-fotterBasic .switchStyle{
+    color: #9ea3ab;
+}
+.qui-fotterBasic .switchStyle span{
+    margin-left: 30px;
+}
+.qui-fotterBasic .switchStyle a{
+    /* 字体颜色为灰黑色 */
+    color: #444;
+    /* 清楚文本样式 */
+    text-decoration: none;
+}
+.qui-asides{
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 400px;
+    width: 200px;
+}
+.qui-aside{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    /* 垂直方向内容溢出则显示滚动条 */
+    overflow-y: scroll;
+    background-color: #2d3741;
+}
+.qui-asideNav{
+    /* 上内边距为80px，左右内边距都为10px，下内边距为10px */
+    padding: 80px 10px 10px;
+}
+.qui-asideNav li{
+    border-top: 1px solid #232d34;
+    background-color: #36424b;
+}
+.qui-asideNav a{
+    text-decoration: none;
+    display: block;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 44px;
+    color: #ced1d5;
+}
+.qui-asideNav a:hover{
+    color: white;
+    background-color: #2bab79;
+}
