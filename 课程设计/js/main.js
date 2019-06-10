@@ -5,7 +5,7 @@ $(function () {
 		effect: load_in[Math.floor(Math.random()*load_in.length)],
 		reverse: false
 	  });
-	$('#motto').everyTime('8s',function(){
+	$('#motto').everyTime('10s',function(){
 		$.get("https://api.lwl12.com/hitokoto/v1",function(data,state){
 			if (state=="success"){
 				change_motto(data);
